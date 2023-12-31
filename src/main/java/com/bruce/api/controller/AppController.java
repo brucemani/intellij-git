@@ -3,6 +3,7 @@ package com.bruce.api.controller;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,7 +26,7 @@ public class AppController {
     public ResponseEntity<?> show() {
         return ok("Hello mani");
     }
-    @GetMapping(produces = APPLICATION_JSON_VALUE)
+    @PostMapping(produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<?> display() {
         return ok("Hello mani");
     }
