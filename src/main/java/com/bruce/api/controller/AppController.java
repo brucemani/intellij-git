@@ -25,4 +25,8 @@ public class AppController {
     public ResponseEntity<?> show() {
         return ok("Hello mani");
     }
+    @GetMapping(produces = APPLICATION_JSON_VALUE)
+    public ResponseEntity<?> display() {
+        return ok("Hello mani");
+    }
 }
